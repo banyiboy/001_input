@@ -1,0 +1,12 @@
+#创建一个输入框，根据输入的内容执行命令
+while 1:
+    a=input("请输入5位数以下的正整数,输入0终止：")
+    b=len(a)
+    if a=="0":
+        break
+    if len(a)<=5 and a.isdigit():
+        a=int(a)
+        b=str(b)
+        print("您输入的是" ,b,"位数的数字")
+    else:
+           print("输入错误，请重新输入")
